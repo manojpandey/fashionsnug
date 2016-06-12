@@ -1,0 +1,116 @@
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.dp {
+    background-size: ;
+    height: 150px;
+    /*width: 150px;*/
+    /*border-radius: 100%;*/
+    margin-top: -60px;
+}
+
+.vert-text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.vert-text h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+
+/* Full Page Image Header Area */
+
+.header {
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /*background: url(../img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;*/
+    /*background-size: cover;*/
+    background-image: linear-gradient(230deg, #52cc08, #f1c0c0, #272eb1);
+    background-size: 400% 400%;
+}
+
+
+/* Intro */
+
+.intro {
+    padding: 50px 0;
+}
+
+#arraytext {
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .header {
+        /*background: url(../img/bg.jpg) no-repeat center center scroll;*/
+        background-image: linear-gradient(230deg, #52cc08, #f1c0c0, #272eb1);
+        background-size: 400% 400%;
+    }
+}
+
+
+/*on hover -> raise effect*/
+
+.hvr-float-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+[class^="hvr-"] {
+    margin: .4em;
+    padding: 1em;
+    cursor: default;
+    background: #e1e1e1;
+    text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.hvr-float-shadow:hover,
+.hvr-float-shadow:focus,
+.hvr-float-shadow:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+a:hover,
+a:focus {
+    color: #23527c;
+    text-decoration: none;
+}

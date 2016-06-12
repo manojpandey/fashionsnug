@@ -67,7 +67,7 @@ def call_api(imageUrl):
 		result["height"] = int(math.ceil(faceData["faceLandmarks"]["noseTip"]["y"] - faceData["faceRectangle"]["top"]))
 		confidence = confidence + abs(result["height"] - model[8])/model[8]
 		result["bodyfit"] = "h2"
-		result["confidence"] = 1.0 - confidence
+		result["confidence"] = abs(1.0 - confidence)
 		json_data = []
 	 	json_data.append(result["url"])
 	 	json_data.append(result["confidence"])

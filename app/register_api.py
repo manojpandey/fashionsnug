@@ -14,7 +14,8 @@ import httplib,urllib,base64
 
 def ImageColor(imageData, x, y, width, height, fac):
 	pixel = imageData[int(x+width/fac),int(y+height/fac)]
-	return (pixel[2]*255*255 + pixel[1] * 255 + pixel[0])
+	# return (pixel[2]*255*255 + pixel[1] * 255 + pixel[0])
+	return str("%02x%02x%02x")%(pixel[2], pixel[1], pixel[0])
 
 faceApiHeader1 = {
  	'Content-Type':'application/json',

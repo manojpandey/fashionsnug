@@ -15,5 +15,9 @@ def server_api(url):
 	# return url
 	return rest_api.call_api(baseurl + str(url) + ".jpg")
 
+@app.route('/test/<var>')
+def test(var):
+	return var
+
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', port=5000, debug=True)
